@@ -11,7 +11,7 @@ class Frame(CTkFrame):
         self.label = CTkLabel(self)
         self.label.pack(padx=20)
 
-        self.name = CTkEntry(self, placeholder_text='nome do arquivo', bg_color='white')
+        self.name = CTkEntry(self, placeholder_text='nome do arquivo', bg_color='white' , corner_radius = 34)
         self.name.pack(pady=20)
         
         arquivo = f' {self.name.get()}.pdf'
@@ -19,17 +19,15 @@ class Frame(CTkFrame):
 class Window(CTk):
     def __init__(self):
         super().__init__()
-        self.title('Reader')
-        self.geometry('600x300')
+        self.title('All Reader')
+        self.geometry('750x420')
         self.index = int(0)
         self.paginas = num_pages
         self.pdf_textos = {'Inicio':'0'}
 
         self.frame = Frame(self)
         self.frame.pack(pady= 40)
-
-        self.arquivo = CTkInputDialog(self,text='nome do arquivo', text_color='green')
-
+ 
         self.advanced = CTkButton(self.frame,width=140 , height=28, text ='+', command = leitura)
         self.advanced.pack(pady=20)
         
