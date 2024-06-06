@@ -1,4 +1,4 @@
-.Meu nome é Vinícius Palmeira, tenho 18 anos e
+.Meu nome é Vinícius Palmeira, tenho 18 anos
 
 .Sou um desenvolvedor iniciante, que desenvolve programas com a liguagem de programação python
 
